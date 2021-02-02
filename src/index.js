@@ -12,6 +12,7 @@ const store = createStore(reducer);
 
 const rootElement = document.getElementById('root');
 ReactDOM.render(
-    <Provider store={store}>
+    // entire app has access to store
+    <Provider store={store}> 
 <App />
-</Provider>, rootElement);
+</Provider>, rootElement)
